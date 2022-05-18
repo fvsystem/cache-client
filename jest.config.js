@@ -13,6 +13,7 @@ module.exports = {
   },
   extensionsToTreatAsEsm: ['.ts'],
   collectCoverage: true,
+  collectCoverageFrom: ['src/lib/**/*.{ts,tsx}'],
   coverageThreshold: {
     global: {
       branches: 100,

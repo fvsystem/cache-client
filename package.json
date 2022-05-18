@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "start": "DEBUG=fvsystem-template-cache node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,9 @@
     "ts-jest": "latest",
     "ts-node": "latest",
     "typescript": "latest"
+  },
+  "dependencies": {
+    "@fvsystem/cache-redis": "^0.0.3",
+    "@fvsystem/cache-template": "^0.0.3"
   }
 }
